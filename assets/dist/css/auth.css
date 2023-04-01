@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../img/hero-image.png) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+
+    font-family: 'Poppins', cursive;
+    height: 100%;
+}
+
+section {
+    margin: auto;
+}
+
+#daftar {
+    max-width: 1000px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.daftar-image {
+    padding: 20px;
+}
+
+#login {
+    max-width: 800px;
+    margin-top: 100px;
+}
+
+.login-image {
+    margin-left: 15px;
+}
+
+
+.card {
+    background-color: rgb(255, 252, 163);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+
+}
+
+.card-body {
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35);
+
+}
+
+/* Animation */
+
+#link_daftar,
+#link_login,
+#tombol_daftar,
+#tombol_login,
+#tombol_batal {
+    transition: ease 0.5s;
+    text-decoration: none;
+}
+
+#tombol_daftar:hover,
+#tombol_daftar:focus,
+#tombol_login:hover,
+#tombol_login:focus {
+    border: none;
+    /* padding: 0px 40px; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(248, 195, 0);
+    /* border-radius: 20px; */
+    /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35); */
+}
+
+#tombol_batal:hover,
+#tombol_batal:focus {
+    border: none;
+    /* padding: 0px 40px; */
+    color: rgb(255, 255, 255);
+    background-color: rgb(252, 63, 25);
+    /* border-radius: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35); */
+}
+
+#link_daftar:hover,
+#link_daftar:focus,
+#link_login:hover,
+#link_login:focus {
+    border: none;
+    text-decoration: underline;
+
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 1s;
+}
+
+.fade-up {
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.fade-down {
+    transform: translateY(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 992px) {
+    .card-body {
+        background-color: white;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.35);
+
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #login {
+        margin-top: 60px;
+    }
+}

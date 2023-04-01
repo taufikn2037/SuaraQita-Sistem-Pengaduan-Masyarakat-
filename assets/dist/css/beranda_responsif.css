@@ -1,0 +1,50 @@
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        height: 70vh;
+    }
+
+    #content-1 {
+        text-align: center;
+    }
+
+    #content-2 img {
+        width: 120px;
+    }
+
+    #content-2 .box {
+        height: 300px;
+    }
+
+    #content-3 .row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar-brand {
+        width: 150px;
+        height: auto;
+    }
+
+    .jumbotron {
+        height: 50vh;
+    }
+
+    .jumbotron p {
+        width: 80%;
+    }
+
+    #content-2 h5,
+    #content-2 p {
+        font-size: small;
+    }
+
+    #content-2 img {
+        width: 100px;
+    }
+
+    #content-2 .box {
+        height: 250px;
+    }
+}
